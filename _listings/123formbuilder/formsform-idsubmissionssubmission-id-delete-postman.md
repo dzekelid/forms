@@ -1,8 +1,8 @@
 {
   "info": {
-    "name": "123FormBuilder Get all forms in a group",
-    "_postman_id": "6e71edbd-b4bc-481a-9459-2d6d40e26da1",
-    "description": "Displays a list of all of the forms within a specific group.",
+    "name": "123FormBuilder Delete one form submission",
+    "_postman_id": "bfda9bd8-1d21-405e-a77d-6c376b78fff1",
+    "description": "Delete one form submission",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
@@ -10,7 +10,7 @@
       "name": "Ping",
       "item": [
         {
-          "id": "15ad983d-df98-494a-bd05-c90778e85f84",
+          "id": "c9c89344-a94d-41c1-8853-dd61e63b773f",
           "name": "this-indicates-if-our-servers-are-up-and-running",
           "request": {
             "url": "http://api.123contactform.com/v2/ping",
@@ -32,7 +32,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "535465a7-5174-4830-9de0-6c6df71ef99b"
+              "id": "8e88e983-46e8-4611-af42-9a6552b3ea22"
             }
           ]
         }
@@ -42,7 +42,7 @@
       "name": "User",
       "item": [
         {
-          "id": "e0efb75d-bd59-480c-8249-d669459e9f04",
+          "id": "dc8d6445-cec0-4c3b-969f-a417e1c8b6cd",
           "name": "allows-you-to-authenticate-users-required-parameters-username-or-email-password-or-passhash",
           "request": {
             "url": "http://api.123contactform.com/v2/token?email=%7B%7D&passhash=%7B%7D&password=%7B%7D&username=%7B%7D",
@@ -64,34 +64,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "edaa665d-3768-4792-a8d6-95f8b720f8b5"
-            }
-          ]
-        },
-        {
-          "id": "b0a2d4e6-4747-4104-a809-679e400056bf",
-          "name": "get-all-user-groups",
-          "request": {
-            "url": "http://api.123contactform.com/v2/groups?JWT=%7B%7D&page=%7B%7D&per_page=%7B%7D",
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "*/*",
-                "disabled": false
-              }
-            ],
-            "body": {
-              "mode": "raw"
-            },
-            "description": "Get all user groups"
-          },
-          "response": [
-            {
-              "status": "OK",
-              "code": 200,
-              "name": "Response_200",
-              "id": "23491b87-acd6-4248-afdc-5a9871fc5139"
+              "id": "4a1b9cf7-b402-446e-b22e-8ff0f3679a55"
             }
           ]
         }
@@ -101,7 +74,7 @@
       "name": "Refresh",
       "item": [
         {
-          "id": "54447cc8-18e4-448f-b02a-98efcd04518e",
+          "id": "08a9df46-5a65-4cd6-ba1c-70cc452707ef",
           "name": "refresh-token",
           "request": {
             "url": "http://api.123contactform.com/v2/token/refresh",
@@ -131,7 +104,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "7f5c852a-8868-47fa-b1e9-3d542ac7f021"
+              "id": "9169f51a-00d7-4a72-a352-7bb28059ff45"
             }
           ]
         }
@@ -141,7 +114,7 @@
       "name": "Invalidate",
       "item": [
         {
-          "id": "b949d7d2-67fb-4674-a1aa-89717cf4bb52",
+          "id": "bd7d91a9-6974-48e1-bbe7-5867727f5600",
           "name": "invalidate-token",
           "request": {
             "url": "http://api.123contactform.com/v2/token/invalidate",
@@ -171,7 +144,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "45bcf806-39c2-485d-8322-ed36c1282601"
+              "id": "58443111-d082-48e8-a2a1-55474ba7f33c"
             }
           ]
         }
@@ -181,7 +154,7 @@
       "name": "List",
       "item": [
         {
-          "id": "20ce4502-22c6-4d5f-9fdf-9d6cc5e78a5e",
+          "id": "97fec18e-8684-4603-95aa-6c982f874e70",
           "name": "the-forms-endpoint-returns-information-about-the-forms-the-response-includes-submissions-and-other-d",
           "request": {
             "url": "http://api.123contactform.com/v2/forms?JWT=%7B%7D&page=%7B%7D&per_page=%7B%7D&search=%7B%7D",
@@ -203,7 +176,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "313db188-b5e1-4653-ac3a-7abfcbd678ec"
+              "id": "5048d2af-6441-43f1-85a2-50be5b8cc805"
             }
           ]
         }
@@ -213,7 +186,7 @@
       "name": "New",
       "item": [
         {
-          "id": "61efd391-75a3-4a59-8384-b0a9328fc6bf",
+          "id": "f7072f72-aca3-4a37-b52d-6d46279adff2",
           "name": "create-a-new-form",
           "request": {
             "url": "http://api.123contactform.com/v2/forms",
@@ -279,60 +252,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "0b26a112-2d36-44d5-8770-2e899e9a3e83"
-            }
-          ]
-        },
-        {
-          "id": "e80ff760-affb-4e50-9a81-587b5cdab24f",
-          "name": "create-a-new-group",
-          "request": {
-            "url": "http://api.123contactform.com/v2/groups",
-            "method": "POST",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "*/*",
-                "disabled": false
-              }
-            ],
-            "body": {
-              "mode": "urlencoded",
-              "urlencoded": [
-                {
-                  "key": "JWT",
-                  "value": "{}",
-                  "disabled": false,
-                  "description": "JWT authentication token"
-                },
-                {
-                  "key": "name",
-                  "value": "{}",
-                  "disabled": false,
-                  "description": "Form name"
-                },
-                {
-                  "key": "parent_id",
-                  "value": "{}",
-                  "disabled": false,
-                  "description": "Indicates the ID of the parent group"
-                },
-                {
-                  "key": "webhook_url",
-                  "value": "{}",
-                  "disabled": false,
-                  "description": "The URL of the WebHook"
-                }
-              ]
-            },
-            "description": "Create a new group"
-          },
-          "response": [
-            {
-              "status": "OK",
-              "code": 200,
-              "name": "Response_200",
-              "id": "231f96bb-4bce-45d4-aee9-b116fd04bce8"
+              "id": "d1746cf9-5660-45a7-8912-4f1056b6a49e"
             }
           ]
         }
@@ -342,7 +262,7 @@
       "name": "Multiple",
       "item": [
         {
-          "id": "3d9a06ac-c307-4ef4-af08-afe0895e0e7f",
+          "id": "9370c8d0-4d85-452c-bce7-970073397102",
           "name": "delete-multiple-forms",
           "request": {
             "url": "http://api.123contactform.com/v2/forms/bulk",
@@ -378,7 +298,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "cdff9128-a4b8-444d-b294-06340ce7e3ce"
+              "id": "1368791b-9611-4a62-a710-93e34e62a67f"
             }
           ]
         }
@@ -388,7 +308,7 @@
       "name": "Form",
       "item": [
         {
-          "id": "1d96f31a-4c50-4eb8-8963-2f8073428ebe",
+          "id": "18eeba34-d2c5-4c39-ba62-7920786683ec",
           "name": "get-the-details-of-a-single-form",
           "request": {
             "url": {
@@ -431,12 +351,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "17c9f558-0cd8-4bbc-be69-956fa1967928"
+              "id": "cd37962c-3e2e-4c9b-adbf-54b23ac56b19"
             }
           ]
         },
         {
-          "id": "045d9fbe-1708-44b2-b7a9-d150c7716ccc",
+          "id": "ef9cdaf1-9eb6-42e3-84f1-5a052eafe277",
           "name": "update-form-details",
           "request": {
             "url": {
@@ -517,12 +437,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "a9f98b2d-edb6-4aa2-b90d-90eb4c9aa836"
+              "id": "de424116-32f3-47a1-b04b-6b2c29fc5e54"
             }
           ]
         },
         {
-          "id": "6dfb5bf2-ff5d-4d35-9124-072f6dfb21e3",
+          "id": "c48016b7-7308-4571-93f8-28877d0b05cc",
           "name": "delete-a-form",
           "request": {
             "url": {
@@ -566,12 +486,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "c30047ae-f65f-475d-b4a2-6ac03ceffd38"
+              "id": "0f39f8ec-387b-4bdf-a253-1ec8cd938b5a"
             }
           ]
         },
         {
-          "id": "b9774f52-fd28-431e-9bac-017b81e63bf3",
+          "id": "4f1c2c02-6f41-4f8e-9ea6-2f99efd28d26",
           "name": "get-the-details-of-a-single-form-and-its-fields",
           "request": {
             "url": {
@@ -614,12 +534,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "326c5c02-55c3-482f-a624-04be6b2d5414"
+              "id": "ab0b3f1a-10e3-4be5-ae26-acf6372e7bff"
             }
           ]
         },
         {
-          "id": "14983450-02c6-4a83-a63b-a2d511b5b74f",
+          "id": "97510a8d-8809-4aa3-ac04-0762b09941d1",
           "name": "delete-one-form-submission",
           "request": {
             "url": {
@@ -667,7 +587,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "16faafdb-3aee-404b-b417-cc1ac9a4df2c"
+              "id": "4a0d65ef-50e2-46ff-8fbd-cfedafed4350"
             }
           ]
         }
@@ -677,7 +597,7 @@
       "name": "Submissions",
       "item": [
         {
-          "id": "db4b938b-7b06-4320-8c75-bcc98857071b",
+          "id": "39a2d434-3a4f-4110-8c14-5a656586eb8a",
           "name": "get-all-submissions-received-through-a-form",
           "request": {
             "url": {
@@ -745,7 +665,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "1876aa79-6c53-4fb9-bfb6-eceea0aee243"
+              "id": "f53c0c34-eed5-4a28-9327-f5ddc40b7f91"
             }
           ]
         }
@@ -755,7 +675,7 @@
       "name": "Submission",
       "item": [
         {
-          "id": "e9dbbfed-0460-4dbe-8a53-8934e1dbebc1",
+          "id": "8e1c16ab-b946-4771-8dc4-ce51e6ba59b4",
           "name": "get-the-details-of-a-single-submission",
           "request": {
             "url": {
@@ -808,12 +728,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "8b86b180-3167-4d97-a5b8-2a405091524a"
+              "id": "d39b4a2d-c9b3-4ed5-9533-6bac43356d01"
             }
           ]
         },
         {
-          "id": "7c56be7e-6b65-4ac2-aec8-58554bbc8656",
+          "id": "2d3730eb-147c-4534-bf71-018c8b08ccf8",
           "name": "update-submission",
           "request": {
             "url": {
@@ -871,180 +791,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "5294cff9-362a-43ba-962e-a50073dd6d5e"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Group",
-      "item": [
-        {
-          "id": "8e1b4a03-1f14-45d4-a91a-08d473310dd2",
-          "name": "get-information-about-a-specific-group",
-          "request": {
-            "url": {
-              "protocol": "http",
-              "host": "api.123contactform.com",
-              "path": [
-                "v2",
-                "groups/:group_id"
-              ],
-              "query": [
-                {
-                  "key": "JWT",
-                  "value": "%7B%7D",
-                  "disabled": false
-                }
-              ],
-              "variable": [
-                {
-                  "id": "group_id",
-                  "value": "{}",
-                  "type": "string"
-                }
-              ]
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "*/*",
-                "disabled": false
-              }
-            ],
-            "body": {
-              "mode": "raw"
-            },
-            "description": "Get information about a specific group."
-          },
-          "response": [
-            {
-              "status": "OK",
-              "code": 200,
-              "name": "Response_200",
-              "id": "5df9fe0e-2c18-41d5-b046-1b82bca412bb"
-            }
-          ]
-        },
-        {
-          "id": "aef3e7a1-a397-4a92-aee5-84ae830adbe8",
-          "name": "updates-the-details-of-a-group",
-          "request": {
-            "url": {
-              "protocol": "http",
-              "host": "api.123contactform.com",
-              "path": [
-                "v2",
-                "groups/:group_id"
-              ],
-              "variable": [
-                {
-                  "id": "group_id",
-                  "value": "{}",
-                  "type": "string"
-                }
-              ]
-            },
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "*/*",
-                "disabled": false
-              }
-            ],
-            "body": {
-              "mode": "urlencoded",
-              "urlencoded": [
-                {
-                  "key": "JWT",
-                  "value": "{}",
-                  "disabled": false,
-                  "description": "JWT authentication token"
-                },
-                {
-                  "key": "name",
-                  "value": "{}",
-                  "disabled": false,
-                  "description": "This is required when the webhook_url or parent_id is missing"
-                },
-                {
-                  "key": "parent_id",
-                  "value": "{}",
-                  "disabled": false,
-                  "description": "Indicates the ID of the parent group"
-                },
-                {
-                  "key": "webhook_url",
-                  "value": "{}",
-                  "disabled": false,
-                  "description": "This is required when the name or parent_id is missing"
-                }
-              ]
-            },
-            "description": "Updates the details of a group."
-          },
-          "response": [
-            {
-              "status": "OK",
-              "code": 200,
-              "name": "Response_200",
-              "id": "72deab72-8591-4f96-ba32-8bd5fd42f14e"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Forms",
-      "item": [
-        {
-          "id": "d7e03f31-1533-4e48-8ae4-eef362c17bf3",
-          "name": "displays-a-list-of-all-of-the-forms-within-a-specific-group",
-          "request": {
-            "url": {
-              "protocol": "http",
-              "host": "api.123contactform.com",
-              "path": [
-                "v2",
-                "groups/:group_id/forms"
-              ],
-              "query": [
-                {
-                  "key": "JWT",
-                  "value": "%7B%7D",
-                  "disabled": false
-                }
-              ],
-              "variable": [
-                {
-                  "id": "group_id",
-                  "value": "{}",
-                  "type": "string"
-                }
-              ]
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "*/*",
-                "disabled": false
-              }
-            ],
-            "body": {
-              "mode": "raw"
-            },
-            "description": "Displays a list of all of the forms within a specific group."
-          },
-          "response": [
-            {
-              "status": "OK",
-              "code": 200,
-              "name": "Response_200",
-              "id": "a999f985-e4d4-4c7e-8800-b55347bf7a0f"
+              "id": "981f7565-6229-4ed0-a506-c49a934466d1"
             }
           ]
         }

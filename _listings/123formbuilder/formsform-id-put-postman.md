@@ -1,8 +1,8 @@
 {
   "info": {
-    "name": "123FormBuilder Delete multiple forms",
-    "_postman_id": "36fcfef5-d351-416a-ba28-d21dc4c53740",
-    "description": "Delete multiple forms",
+    "name": "123FormBuilder Update form details",
+    "_postman_id": "3290a904-71fb-449c-be70-7fc2252284cd",
+    "description": "Update form details",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
@@ -10,7 +10,7 @@
       "name": "Ping",
       "item": [
         {
-          "id": "b137ebbe-7e1d-406a-9e5a-2b9e4b9f014a",
+          "id": "a83a9161-23d0-497e-8c05-8d237851b175",
           "name": "this-indicates-if-our-servers-are-up-and-running",
           "request": {
             "url": "http://api.123contactform.com/v2/ping",
@@ -32,7 +32,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "d5e3042b-13d2-46d8-84f5-d51cd43bc2e6"
+              "id": "6f26ae57-7563-4cea-85f9-b595c4371ae5"
             }
           ]
         }
@@ -42,7 +42,7 @@
       "name": "User",
       "item": [
         {
-          "id": "27e4c521-24dc-4717-a966-6bcffb1994c4",
+          "id": "66d1aba6-117f-443c-bd8f-d66b2a141560",
           "name": "allows-you-to-authenticate-users-required-parameters-username-or-email-password-or-passhash",
           "request": {
             "url": "http://api.123contactform.com/v2/token?email=%7B%7D&passhash=%7B%7D&password=%7B%7D&username=%7B%7D",
@@ -64,7 +64,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "2a64a558-107b-49d0-a30b-a05f4038cd5d"
+              "id": "6c57d6c8-cec8-4fa6-b991-146636b2004d"
             }
           ]
         }
@@ -74,7 +74,7 @@
       "name": "Refresh",
       "item": [
         {
-          "id": "832b6339-60dd-48b1-a748-8b6c4a5b4174",
+          "id": "d0379453-d2be-4bf8-8299-aff61cd5e36d",
           "name": "refresh-token",
           "request": {
             "url": "http://api.123contactform.com/v2/token/refresh",
@@ -104,7 +104,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "f677b4a8-f4d4-40de-9deb-c9e40d83c26d"
+              "id": "56b41e9f-4591-4379-8e1b-3a1c7d65641a"
             }
           ]
         }
@@ -114,7 +114,7 @@
       "name": "Invalidate",
       "item": [
         {
-          "id": "71877991-b947-4781-ba20-83575a8f7fc2",
+          "id": "8ef01db3-071c-477b-b362-bf323652efd8",
           "name": "invalidate-token",
           "request": {
             "url": "http://api.123contactform.com/v2/token/invalidate",
@@ -144,7 +144,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "e3b40993-8db1-44fc-a232-966c58718e12"
+              "id": "27635e8d-8df9-49ca-9cdc-90c854441b4f"
             }
           ]
         }
@@ -154,7 +154,7 @@
       "name": "List",
       "item": [
         {
-          "id": "87963a69-6676-4c04-9a9d-b663f0bd6e6a",
+          "id": "44f6ea6e-f5d6-41bc-a929-356384926b2d",
           "name": "the-forms-endpoint-returns-information-about-the-forms-the-response-includes-submissions-and-other-d",
           "request": {
             "url": "http://api.123contactform.com/v2/forms?JWT=%7B%7D&page=%7B%7D&per_page=%7B%7D&search=%7B%7D",
@@ -176,7 +176,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "37b34a84-d248-40e9-b4de-9491a26b0122"
+              "id": "a3794eba-1c1d-482b-a1e6-94445222a36e"
             }
           ]
         }
@@ -186,7 +186,7 @@
       "name": "New",
       "item": [
         {
-          "id": "32b6a819-b303-4bcb-984f-e5377bf04b85",
+          "id": "7fa3aed7-0503-4a9a-a389-8aba97a10e38",
           "name": "create-a-new-form",
           "request": {
             "url": "http://api.123contactform.com/v2/forms",
@@ -252,7 +252,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "12abd66b-f90f-4dd3-8c86-bcd11a67c339"
+              "id": "1f10f8c4-ed03-4bdf-93b3-7a80f45e4b88"
             }
           ]
         }
@@ -262,7 +262,7 @@
       "name": "Multiple",
       "item": [
         {
-          "id": "037f1bf4-a15e-4f42-90a1-71ed35cd9ae3",
+          "id": "3c9890c9-8c14-4c7f-81f5-679cba9184f6",
           "name": "delete-multiple-forms",
           "request": {
             "url": "http://api.123contactform.com/v2/forms/bulk",
@@ -298,7 +298,146 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "9b10c20c-ea5d-46ed-a217-3d41cb0ed185"
+              "id": "18924fce-ccde-4079-aa3e-45b8bb9b63a8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Form",
+      "item": [
+        {
+          "id": "ab6d5b34-6e7d-4ed3-94de-1e6e42fbcfc4",
+          "name": "get-the-details-of-a-single-form",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "api.123contactform.com",
+              "path": [
+                "v2",
+                "forms/:form_id"
+              ],
+              "query": [
+                {
+                  "key": "JWT",
+                  "value": "%7B%7D",
+                  "disabled": false
+                }
+              ],
+              "variable": [
+                {
+                  "id": "form_id",
+                  "value": "{}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw"
+            },
+            "description": "Get the details of a single form"
+          },
+          "response": [
+            {
+              "status": "OK",
+              "code": 200,
+              "name": "Response_200",
+              "id": "0cc6497b-fb34-4de6-87c7-28d93f4765f1"
+            }
+          ]
+        },
+        {
+          "id": "c6e8342f-f752-4221-a4bf-970ee8e0839c",
+          "name": "update-form-details",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "api.123contactform.com",
+              "path": [
+                "v2",
+                "forms/:form_id"
+              ],
+              "query": [
+                {
+                  "key": "JWT",
+                  "value": "%7B%7D",
+                  "disabled": false
+                }
+              ],
+              "variable": [
+                {
+                  "id": "form_id",
+                  "value": "{}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "active",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "Form activity status"
+                },
+                {
+                  "key": "active_date_from",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "If activity status is 1, this field is required"
+                },
+                {
+                  "key": "active_date_to",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "If activity status is 1, this field is required"
+                },
+                {
+                  "key": "active_days",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "If activity status is 4, this field is required"
+                },
+                {
+                  "key": "group_id",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "The ID of the group in which you want to create the form"
+                },
+                {
+                  "key": "name",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "Change the name of the form"
+                }
+              ]
+            },
+            "description": "Update form details"
+          },
+          "response": [
+            {
+              "status": "OK",
+              "code": 200,
+              "name": "Response_200",
+              "id": "06e796c0-a26c-4d45-9202-c9cc0380fff8"
             }
           ]
         }

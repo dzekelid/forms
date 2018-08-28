@@ -1,8 +1,8 @@
 {
   "info": {
-    "name": "123FormBuilder Delete multiple forms",
-    "_postman_id": "36fcfef5-d351-416a-ba28-d21dc4c53740",
-    "description": "Delete multiple forms",
+    "name": "123FormBuilder Get form details",
+    "_postman_id": "2b9daf0e-f188-44d5-b4b8-5ccf60e25173",
+    "description": "Get the details of a single form",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
@@ -10,7 +10,7 @@
       "name": "Ping",
       "item": [
         {
-          "id": "b137ebbe-7e1d-406a-9e5a-2b9e4b9f014a",
+          "id": "a45ceaf9-f0e5-4031-9fef-33fff737c2a8",
           "name": "this-indicates-if-our-servers-are-up-and-running",
           "request": {
             "url": "http://api.123contactform.com/v2/ping",
@@ -32,7 +32,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "d5e3042b-13d2-46d8-84f5-d51cd43bc2e6"
+              "id": "b20bbc94-97c5-4fcd-94bc-33a046b9c63b"
             }
           ]
         }
@@ -42,7 +42,7 @@
       "name": "User",
       "item": [
         {
-          "id": "27e4c521-24dc-4717-a966-6bcffb1994c4",
+          "id": "4eadbfb8-dce7-4e84-935e-bf31f82dec71",
           "name": "allows-you-to-authenticate-users-required-parameters-username-or-email-password-or-passhash",
           "request": {
             "url": "http://api.123contactform.com/v2/token?email=%7B%7D&passhash=%7B%7D&password=%7B%7D&username=%7B%7D",
@@ -64,7 +64,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "2a64a558-107b-49d0-a30b-a05f4038cd5d"
+              "id": "a7a07cdb-2348-4c6c-b73b-40c5701ab74b"
             }
           ]
         }
@@ -74,7 +74,7 @@
       "name": "Refresh",
       "item": [
         {
-          "id": "832b6339-60dd-48b1-a748-8b6c4a5b4174",
+          "id": "a01a0800-9cae-4a21-93b4-cb97918ef010",
           "name": "refresh-token",
           "request": {
             "url": "http://api.123contactform.com/v2/token/refresh",
@@ -104,7 +104,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "f677b4a8-f4d4-40de-9deb-c9e40d83c26d"
+              "id": "20054a80-3c75-403a-9db9-c965df52c31f"
             }
           ]
         }
@@ -114,7 +114,7 @@
       "name": "Invalidate",
       "item": [
         {
-          "id": "71877991-b947-4781-ba20-83575a8f7fc2",
+          "id": "dbae460f-6ffd-471d-a072-1b2f13d947ac",
           "name": "invalidate-token",
           "request": {
             "url": "http://api.123contactform.com/v2/token/invalidate",
@@ -144,7 +144,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "e3b40993-8db1-44fc-a232-966c58718e12"
+              "id": "1b48d0fa-367a-4e4e-a4f1-f62a9c948fec"
             }
           ]
         }
@@ -154,7 +154,7 @@
       "name": "List",
       "item": [
         {
-          "id": "87963a69-6676-4c04-9a9d-b663f0bd6e6a",
+          "id": "c35ff603-8d45-4b77-a0e2-21b819d95209",
           "name": "the-forms-endpoint-returns-information-about-the-forms-the-response-includes-submissions-and-other-d",
           "request": {
             "url": "http://api.123contactform.com/v2/forms?JWT=%7B%7D&page=%7B%7D&per_page=%7B%7D&search=%7B%7D",
@@ -176,7 +176,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "37b34a84-d248-40e9-b4de-9491a26b0122"
+              "id": "c9581d35-7cf9-4223-97ee-f0115453b63d"
             }
           ]
         }
@@ -186,7 +186,7 @@
       "name": "New",
       "item": [
         {
-          "id": "32b6a819-b303-4bcb-984f-e5377bf04b85",
+          "id": "6a21d3bd-33e1-4d8b-8de6-5dd239a9dfc3",
           "name": "create-a-new-form",
           "request": {
             "url": "http://api.123contactform.com/v2/forms",
@@ -252,7 +252,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "12abd66b-f90f-4dd3-8c86-bcd11a67c339"
+              "id": "4ac93f01-32f1-43c0-9b6e-c148b7ec94a6"
             }
           ]
         }
@@ -262,7 +262,7 @@
       "name": "Multiple",
       "item": [
         {
-          "id": "037f1bf4-a15e-4f42-90a1-71ed35cd9ae3",
+          "id": "68d4a2a1-f397-4e7b-a890-4aec13827104",
           "name": "delete-multiple-forms",
           "request": {
             "url": "http://api.123contactform.com/v2/forms/bulk",
@@ -298,7 +298,60 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "9b10c20c-ea5d-46ed-a217-3d41cb0ed185"
+              "id": "c936fb47-6054-4362-ba3c-8399b50bbdaf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Form",
+      "item": [
+        {
+          "id": "3983ca10-6d47-4880-a85c-14728f88a85b",
+          "name": "get-the-details-of-a-single-form",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "api.123contactform.com",
+              "path": [
+                "v2",
+                "forms/:form_id"
+              ],
+              "query": [
+                {
+                  "key": "JWT",
+                  "value": "%7B%7D",
+                  "disabled": false
+                }
+              ],
+              "variable": [
+                {
+                  "id": "form_id",
+                  "value": "{}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw"
+            },
+            "description": "Get the details of a single form"
+          },
+          "response": [
+            {
+              "status": "OK",
+              "code": 200,
+              "name": "Response_200",
+              "id": "ad84eabf-5e87-4c92-beee-aa93fcefcd85"
             }
           ]
         }

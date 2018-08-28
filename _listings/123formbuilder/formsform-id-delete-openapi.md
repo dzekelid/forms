@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: 123FormBuilder
-x-complete: 1
+x-complete: 0
 info:
-  title: ""
+  title: 123FormBuilder Delete a form
   version: 1.0.0
+  description: Delete a form
 host: api.123contactform.com
 basePath: /v2
 schemes:
@@ -119,44 +121,17 @@ paths:
           description: OK
       tags:
       - Form
-  /forms/{form_id}/fields:
-    get:
-      summary: Get form fields
-      description: Get the details of a single form and its fields
-      operationId: get-the-details-of-a-single-form-and-its-fields
-      x-api-path-slug: formsform-idfields-get
-      parameters:
-      - in: path
-        name: form_id
-        description: The ID of the form
-      - in: query
-        name: JWT
-        description: JWT authentication token
-      responses:
-        200:
-          description: OK
-      tags:
-      - Form
-      - Fields
-  /forms/{form_id}/submissions/{submission_id}:
-    delete:
-      summary: Delete one form submission
-      description: Delete one form submission
-      operationId: delete-one-form-submission
-      x-api-path-slug: formsform-idsubmissionssubmission-id-delete
-      parameters:
-      - in: path
-        name: form_id
-        description: The ID of the form
-      - in: query
-        name: JWT
-        description: JWT authentication token
-      - in: path
-        name: submission_id
-        description: The ID of the submission
-      responses:
-        200:
-          description: OK
-      tags:
-      - Form
-      - Submission
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

@@ -1,8 +1,8 @@
 {
   "info": {
-    "name": "123FormBuilder List forms",
-    "_postman_id": "027e057c-f1cd-4882-bc24-e4d070055c20",
-    "description": "The forms endpoint returns information about the forms. The response includes submissions and other details about each form.",
+    "name": "123FormBuilder Create a new form",
+    "_postman_id": "ff04d9c1-31e6-42cc-a12f-f99315d58ccb",
+    "description": "Create a new form",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
@@ -10,7 +10,7 @@
       "name": "Ping",
       "item": [
         {
-          "id": "8d16aa34-1fc6-486f-9dc9-96b6ab191d91",
+          "id": "15454f00-c3b9-490e-92d2-0fd612662d2f",
           "name": "this-indicates-if-our-servers-are-up-and-running",
           "request": {
             "url": "http://api.123contactform.com/v2/ping",
@@ -32,7 +32,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "3140ea95-aa19-4b17-8d54-f70f4f32fa7b"
+              "id": "d4f9fd43-723a-435c-8049-cea675993f72"
             }
           ]
         }
@@ -42,7 +42,7 @@
       "name": "User",
       "item": [
         {
-          "id": "f3ff6fb5-bee2-4cc0-8b58-298ca90cea24",
+          "id": "bc4ae561-6163-40b5-90b9-349cc82d8701",
           "name": "allows-you-to-authenticate-users-required-parameters-username-or-email-password-or-passhash",
           "request": {
             "url": "http://api.123contactform.com/v2/token?email=%7B%7D&passhash=%7B%7D&password=%7B%7D&username=%7B%7D",
@@ -64,7 +64,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "4df2fcf2-50f0-41b0-92a1-003dc66f83ab"
+              "id": "571a0c5d-bc01-4fba-9173-46faae3ee5bb"
             }
           ]
         }
@@ -74,7 +74,7 @@
       "name": "Refresh",
       "item": [
         {
-          "id": "4b16a603-762d-4c02-a403-7d643eaf0bf3",
+          "id": "ca8301a5-8a40-4c64-9fa0-31faa39c75cd",
           "name": "refresh-token",
           "request": {
             "url": "http://api.123contactform.com/v2/token/refresh",
@@ -104,7 +104,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "0e0cfafe-3ac4-45fe-8ad2-81ba8d7d733b"
+              "id": "f5a0516f-a98e-457e-a90b-64c4fe912889"
             }
           ]
         }
@@ -114,7 +114,7 @@
       "name": "Invalidate",
       "item": [
         {
-          "id": "00890bd3-d52e-4ddf-9687-98abd4de1048",
+          "id": "31757669-b758-462d-888d-f0708e9eb0e4",
           "name": "invalidate-token",
           "request": {
             "url": "http://api.123contactform.com/v2/token/invalidate",
@@ -144,7 +144,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "e4956da8-6318-4179-a619-5ebece3496e9"
+              "id": "b66b4336-fbf0-48c8-ac07-eb7a10d8368b"
             }
           ]
         }
@@ -154,7 +154,7 @@
       "name": "List",
       "item": [
         {
-          "id": "9a2bbbef-63dc-4ed1-bf4c-86a3c6f4bc26",
+          "id": "2252cdc5-6860-42aa-9862-fe4f38dc848e",
           "name": "the-forms-endpoint-returns-information-about-the-forms-the-response-includes-submissions-and-other-d",
           "request": {
             "url": "http://api.123contactform.com/v2/forms?JWT=%7B%7D&page=%7B%7D&per_page=%7B%7D&search=%7B%7D",
@@ -176,7 +176,83 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "ae6a3ec7-94b4-4763-ab4a-6c08e7dd4dbc"
+              "id": "0b1af502-5335-44c0-b3b0-d383f1df5fa2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "New",
+      "item": [
+        {
+          "id": "fdd4b8ef-a280-4a80-b728-de5b4d796e9b",
+          "name": "create-a-new-form",
+          "request": {
+            "url": "http://api.123contactform.com/v2/forms",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "active",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "Form activity status"
+                },
+                {
+                  "key": "active_date_from",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "If activity status is 1, this field is required"
+                },
+                {
+                  "key": "active_date_to",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "If activity status is 1, this field is required"
+                },
+                {
+                  "key": "active_days",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "If activity status is 4, this field is required"
+                },
+                {
+                  "key": "group_id",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "The ID of the group in which you want to create the form"
+                },
+                {
+                  "key": "JWT",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "JWT authentication token"
+                },
+                {
+                  "key": "name",
+                  "value": "{}",
+                  "disabled": false,
+                  "description": "The name of the new form"
+                }
+              ]
+            },
+            "description": "Create a new form"
+          },
+          "response": [
+            {
+              "status": "OK",
+              "code": 200,
+              "name": "Response_200",
+              "id": "a1bb7ed9-1596-4ee3-80e9-b5164d23ddae"
             }
           ]
         }
